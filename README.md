@@ -111,13 +111,43 @@ Les configurations et captures issues du projet seront ajoutées progressivement
 
 ## Documentation et preuves techniques
 
-Ce dépôt sera complété avec des captures issues du mémoire de fin d'études :
 
-- Architecture de déploiement.
-- Configuration de l'environnement Ansible.
-- Inventaire des machines cibles.
-- Playbook d'installation et de déploiement.
-- Exécution des tests et vérification des résultats.
+## Documentation et preuves techniques
+
+Les captures suivantes sont issues du mémoire de fin d'études consacré à l'automatisation du déploiement d'applications avec Ansible.
+
+### 1. Inventaire Ansible
+
+![Inventaire Ansible](screenshots/01-inventaire-ansible.png)
+
+Définition des machines cibles dans un inventaire personnalisé. Le groupe `web` permet de sélectionner le serveur sur lequel les tâches seront exécutées.
+
+### 2. Playbook de déploiement
+
+![Playbook Ansible](screenshots/02-playbook-deploiement.png)
+
+Présentation du playbook YAML utilisé pour automatiser l'installation d'Apache, le démarrage du service et le déploiement de l'application web sur le serveur distant.
+
+### 3. Test de connectivité
+
+![Test de connectivité Ansible](screenshots/03-test-connectivite.png)
+
+Vérification de la communication entre le nœud de contrôle Ansible et le serveur cible avant le lancement du déploiement.
+
+### 4. Exécution du playbook
+
+![Exécution du playbook](screenshots/04-execution-playbook.png)
+
+Exécution des tâches automatisées et observation des résultats retournés par Ansible.
+
+### 5. Vérification de l'application déployée
+
+![Application web déployée](screenshots/05-application-deployee.png)
+
+Vérification du résultat du déploiement à partir d'un navigateur web sur l'environnement de laboratoire.
+
+**Note :** Les captures proviennent du projet de fin d'études réalisé dans un environnement de test virtualisé.
+
 
 **Note :** Ce dépôt documente un projet académique réalisé dans un contexte professionnel. Il ne représente pas un déploiement effectué sur l'infrastructure de production de l'entreprise.
 
